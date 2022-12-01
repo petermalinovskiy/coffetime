@@ -15,7 +15,7 @@ interface IProps {
         coordinates: string;
         description: string;
         images: string;
-    }
+    };
 
 }
 
@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
         borderStyle: 'solid',
         borderColor: Colors.gray,
         padding: 5,
+        overflow: "hidden"
     },
     cafeImageGradient: {
         flex: 1,

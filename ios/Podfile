@@ -10,6 +10,8 @@ target 'CoffeTime' do
 
     # Flags change depending on the env values.
   flags = get_default_flags()
+  
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
   pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary"

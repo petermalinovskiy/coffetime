@@ -10,6 +10,7 @@ import {CommonStyles} from "~/core/theme/commonStyles";
 import {Colors} from "~/core/theme/colors";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import {Map} from "~/modules/main/components/Map";
+import {isIos} from "~/core/theme/commonConsts";
 
 export const Main: NavigationFunctionComponent = (): JSX.Element => {
   const accessToken = useAppSelector((store) => store.login.accessToken);
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
   mapToggle: {
     position: 'absolute',
     zIndex: 2,
-    marginTop: 5,
+    marginTop: isIos ? 100 : 5,
     flexDirection: 'row',
     width: '35%',
     justifyContent: 'space-around',
@@ -77,12 +78,13 @@ const styles = StyleSheet.create({
   mapToggleButton: {
     minWidth: '15%',
     height: 35,
-    borderRadius: 25,
+    borderRadius: isIos ? 20 : 25,
     alignSelf: 'center',
     paddingTop: 5,
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    overflow: "hidden"
   },
   flatList: {
-    marginTop: 50
+    marginTop: isIos ? 150 : 50
   }
 });

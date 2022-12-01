@@ -11,20 +11,19 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		69DDB0B42D4A4A3089B5453B /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0242F37F471143C1BB02CC0A /* .gitkeep */; };
+		6AAC47722938BE7E00961B5F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC47702938BE7E00961B5F /* MaterialIcons.ttf */; };
 		77F29C7437E44EBAB0E8D314 /* SF PRO DISPLAY SEMIBOLD ITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = FA7AD87A6D684EFF80B4B62E /* SF PRO DISPLAY SEMIBOLD ITALIC.OTF */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8430F4E2292B52C400AA5F51 /* customPackagerIp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8430F4E1292B52C400AA5F51 /* customPackagerIp.txt */; };
 		8430F4EA292B58C200AA5F51 /* TestConfigurationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430F4E8292B58C200AA5F51 /* TestConfigurationProvider.m */; };
 		8430F4EF292B67F300AA5F51 /* splash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430F4EC292B67F300AA5F51 /* splash.m */; };
-		8430F4F0292B67F300AA5F51 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8430F4EE292B67F300AA5F51 /* .gitignore */; };
 		8430F4F3292B68E400AA5F51 /* SetIpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430F4F1292B68E400AA5F51 /* SetIpView.m */; };
 		A0F7D60075A8401690798073 /* SF PRO DISPLAY LIGHT ITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 15B65F37ED4C40D38E37F4E6 /* SF PRO DISPLAY LIGHT ITALIC.OTF */; };
 		A2FBF89907D745BEBA7AA122 /* SF PRO DISPLAY BOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 7904674469CB42428EF848E0 /* SF PRO DISPLAY BOLD.OTF */; };
 		AEDC4BAFCE8378B0673B1883 /* libPods-CoffeTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9E7F032F387DCB3B9AD2FB /* libPods-CoffeTime.a */; };
+		D540A635C0644225806A657C /* Lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A01B2FB3AC7A4A38AEB912A4 /* Lobster.ttf */; };
 		E746210517DB40119FEDFB3C /* SF PRO DISPLAY MEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 4908F0A75CE54485B3D9CC03 /* SF PRO DISPLAY MEDIUM.OTF */; };
 		FD378D9F8ECCE12F6A106DF9 /* libPods-CoffeTime-CoffeTimeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB785BA4A0F276AF22911F5 /* libPods-CoffeTime-CoffeTimeTests.a */; };
-		D540A635C0644225806A657C /* Lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A01B2FB3AC7A4A38AEB912A4 /* Lobster.ttf */; };
-		69DDB0B42D4A4A3089B5453B /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0242F37F471143C1BB02CC0A /* .gitkeep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +40,7 @@
 		00E356EE1AD99517003FC87E /* CoffeTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CoffeTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeTimeTests.m; sourceTree = "<group>"; };
+		0242F37F471143C1BB02CC0A /* .gitkeep */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = .gitkeep; path = ../resources/fonts/.gitkeep; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* CoffeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CoffeTime/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = CoffeTime/AppDelegate.mm; sourceTree = "<group>"; };
@@ -54,21 +54,19 @@
 		4908F0A75CE54485B3D9CC03 /* SF PRO DISPLAY MEDIUM.OTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF PRO DISPLAY MEDIUM.OTF"; path = "../resources/fonts/SF PRO DISPLAY MEDIUM.OTF"; sourceTree = "<group>"; };
 		52821158EB6EB7452D0250AB /* Pods-CoffeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeTime.release.xcconfig"; path = "Target Support Files/Pods-CoffeTime/Pods-CoffeTime.release.xcconfig"; sourceTree = "<group>"; };
 		5BBE89A9B3CA9FD6F136BB40 /* Pods-CoffeTime-CoffeTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeTime-CoffeTimeTests.release.xcconfig"; path = "Target Support Files/Pods-CoffeTime-CoffeTimeTests/Pods-CoffeTime-CoffeTimeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6AAC47702938BE7E00961B5F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		7904674469CB42428EF848E0 /* SF PRO DISPLAY BOLD.OTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF PRO DISPLAY BOLD.OTF"; path = "../resources/fonts/SF PRO DISPLAY BOLD.OTF"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CoffeTime/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8430F4E1292B52C400AA5F51 /* customPackagerIp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = customPackagerIp.txt; path = CoffeTime/customPackagerIp.txt; sourceTree = "<group>"; };
 		8430F4E6292B58C200AA5F51 /* TestConfigurationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestConfigurationProvider.h; sourceTree = "<group>"; };
 		8430F4E8292B58C200AA5F51 /* TestConfigurationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestConfigurationProvider.m; sourceTree = "<group>"; };
 		8430F4EC292B67F300AA5F51 /* splash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = splash.m; sourceTree = "<group>"; };
 		8430F4ED292B67F300AA5F51 /* splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = splash.h; sourceTree = "<group>"; };
-		8430F4EE292B67F300AA5F51 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8430F4F1292B68E400AA5F51 /* SetIpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetIpView.m; sourceTree = "<group>"; };
 		8430F4F2292B68E400AA5F51 /* SetIpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetIpView.h; sourceTree = "<group>"; };
+		A01B2FB3AC7A4A38AEB912A4 /* Lobster.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Lobster.ttf; path = ../resources/fonts/Lobster.ttf; sourceTree = "<group>"; };
 		CA9E7F032F387DCB3B9AD2FB /* libPods-CoffeTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoffeTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA7AD87A6D684EFF80B4B62E /* SF PRO DISPLAY SEMIBOLD ITALIC.OTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF PRO DISPLAY SEMIBOLD ITALIC.OTF"; path = "../resources/fonts/SF PRO DISPLAY SEMIBOLD ITALIC.OTF"; sourceTree = "<group>"; };
-		A01B2FB3AC7A4A38AEB912A4 /* Lobster.ttf */ = {isa = PBXFileReference; name = "Lobster.ttf"; path = "../resources/fonts/Lobster.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0242F37F471143C1BB02CC0A /* .gitkeep */ = {isa = PBXFileReference; name = ".gitkeep"; path = "../resources/fonts/.gitkeep"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +122,9 @@
 		13B07FAE1A68108700A75B9A /* CoffeTime */ = {
 			isa = PBXGroup;
 			children = (
+				6AAC47702938BE7E00961B5F /* MaterialIcons.ttf */,
 				8430F4EB292B67F300AA5F51 /* splash */,
 				8430F4E4292B58C200AA5F51 /* TestConfiguration */,
-				8430F4E1292B52C400AA5F51 /* customPackagerIp.txt */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -196,7 +194,6 @@
 			children = (
 				8430F4EC292B67F300AA5F51 /* splash.m */,
 				8430F4ED292B67F300AA5F51 /* splash.h */,
-				8430F4EE292B67F300AA5F51 /* .gitignore */,
 			);
 			name = splash;
 			path = CoffeTime/splash;
@@ -300,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAC47722938BE7E00961B5F /* MaterialIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,12 +305,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8430F4F0292B67F300AA5F51 /* .gitignore in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A2FBF89907D745BEBA7AA122 /* SF PRO DISPLAY BOLD.OTF in Resources */,
 				A0F7D60075A8401690798073 /* SF PRO DISPLAY LIGHT ITALIC.OTF in Resources */,
-				8430F4E2292B52C400AA5F51 /* customPackagerIp.txt in Resources */,
 				E746210517DB40119FEDFB3C /* SF PRO DISPLAY MEDIUM.OTF in Resources */,
 				77F29C7437E44EBAB0E8D314 /* SF PRO DISPLAY SEMIBOLD ITALIC.OTF in Resources */,
 				D540A635C0644225806A657C /* Lobster.ttf in Resources */,
