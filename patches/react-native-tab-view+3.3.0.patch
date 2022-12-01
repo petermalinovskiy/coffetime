@@ -1,0 +1,103 @@
+diff --git a/node_modules/react-native-tab-view/lib/typescript/TabBarItem.d.ts b/node_modules/react-native-tab-view/lib/typescript/TabBarItem.d.ts
+index 68d28bb..4182395 100644
+--- a/node_modules/react-native-tab-view/lib/typescript/TabBarItem.d.ts
++++ b/node_modules/react-native-tab-view/lib/typescript/TabBarItem.d.ts
+@@ -30,6 +30,7 @@ export declare type Props<T extends Route> = {
+     defaultTabWidth?: number;
+     labelStyle?: StyleProp<TextStyle>;
+     style: StyleProp<ViewStyle>;
++    tabContainerStyle?: StyleProp<ViewStyle>;
+ };
+ declare function TabBarItem<T extends Route>(props: Props<T>): JSX.Element;
+ export default TabBarItem;
+diff --git a/node_modules/react-native-tab-view/src/SceneView.tsx b/node_modules/react-native-tab-view/src/SceneView.tsx
+index 0ad451b..60aec75 100644
+--- a/node_modules/react-native-tab-view/src/SceneView.tsx
++++ b/node_modules/react-native-tab-view/src/SceneView.tsx
+@@ -101,6 +101,5 @@ export default function SceneView<T extends Route>({
+ const styles = StyleSheet.create({
+   route: {
+     flex: 1,
+-    overflow: 'hidden',
+   },
+ });
+diff --git a/node_modules/react-native-tab-view/src/TabBar.tsx b/node_modules/react-native-tab-view/src/TabBar.tsx
+index 440aed0..73657c2 100644
+--- a/node_modules/react-native-tab-view/src/TabBar.tsx
++++ b/node_modules/react-native-tab-view/src/TabBar.tsx
+@@ -283,7 +283,7 @@ export default function TabBar<T extends Route>({
+   const measuredTabWidths = React.useRef<Record<string, number>>({});
+ 
+   const { routes } = navigationState;
+-  const flattenedTabWidth = getFlattenedTabWidth(tabStyle);
++  const flattenedTabWidth = getFlattenedTabWidth(tabStyle) || 1;
+   const isWidthDynamic = flattenedTabWidth === 'auto';
+   const scrollOffset = getScrollAmount({
+     layout,
+diff --git a/node_modules/react-native-tab-view/src/TabBarItem.tsx b/node_modules/react-native-tab-view/src/TabBarItem.tsx
+index 10b8d5f..dc491b8 100644
+--- a/node_modules/react-native-tab-view/src/TabBarItem.tsx
++++ b/node_modules/react-native-tab-view/src/TabBarItem.tsx
+@@ -13,7 +13,7 @@ import PlatformPressable from './PlatformPressable';
+ import type { Scene, Route, NavigationState } from './types';
+ 
+ export type Props<T extends Route> = {
+-  position: Animated.AnimatedInterpolation;
++  position: Animated.AnimatedInterpolation<any>;
+   route: T;
+   navigationState: NavigationState<T>;
+   activeColor?: string;
+@@ -41,13 +41,14 @@ export type Props<T extends Route> = {
+   defaultTabWidth?: number;
+   labelStyle?: StyleProp<TextStyle>;
+   style: StyleProp<ViewStyle>;
++  tabContainerStyle: StyleProp<ViewStyle>;
+ };
+ 
+ const DEFAULT_ACTIVE_COLOR = 'rgba(255, 255, 255, 1)';
+ const DEFAULT_INACTIVE_COLOR = 'rgba(255, 255, 255, 0.7)';
+ 
+ const getActiveOpacity = (
+-  position: Animated.AnimatedInterpolation,
++  position: Animated.AnimatedInterpolation<any>,
+   routesLength: number,
+   tabIndex: number
+ ) => {
+@@ -64,7 +65,7 @@ const getActiveOpacity = (
+ };
+ 
+ const getInactiveOpacity = (
+-  position: Animated.AnimatedInterpolation,
++  position: Animated.AnimatedInterpolation<any>,
+   routesLength: number,
+   tabIndex: number
+ ) => {
+@@ -112,6 +113,7 @@ const TabBarItemInternal = <T extends Route>({
+   defaultTabWidth,
+   routesLength,
+   renderLabel: renderLabelCustom,
++  tabContainerStyle: propsTabContainerStyle,
+ }: TabBarItemInternalProps<T>) => {
+   const labelColorFromStyle = StyleSheet.flatten(labelStyle || {}).color;
+ 
+@@ -215,9 +217,9 @@ const TabBarItemInternal = <T extends Route>({
+   const tabStyle = StyleSheet.flatten(style);
+   const isWidthSet = tabStyle?.width !== undefined;
+ 
+-  const tabContainerStyle: ViewStyle | null = isWidthSet
++  const tabContainerStyle = propsTabContainerStyle || (isWidthSet
+     ? null
+-    : { width: defaultTabWidth };
++    : { width: defaultTabWidth });
+ 
+   const scene = { route };
+ 
+@@ -232,7 +234,7 @@ const TabBarItemInternal = <T extends Route>({
+ 
+   return (
+     <PlatformPressable
+-      android_ripple={{ borderless: true }}
++      android_ripple={{ borderless: false }}
+       testID={getTestID(scene)}
+       accessible={getAccessible(scene)}
+       accessibilityLabel={accessibilityLabel}
