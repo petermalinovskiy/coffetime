@@ -11,7 +11,6 @@ export interface CafeItemProps {
 }
 
 export interface IcafeData {
-    map(arg0: (i: IcafeData) => JSX.Element): React.ReactNode;
     id: string;
     name: string;
     address: string;

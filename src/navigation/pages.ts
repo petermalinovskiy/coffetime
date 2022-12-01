@@ -27,14 +27,6 @@ export const Pages = {
     id: "MAIN_SCREEN",
     name: "MainScreen",
   },
-  search: {
-    id: "SEARCH_SCREEN",
-    name: "SearchScreen",
-  },
-  settings: {
-    id: "SETTINGS_SCREEN",
-    name: "SettingsScreen",
-  },
   menu: {
     id: "MENU_SCREEN",
     name: "MenuScreen"

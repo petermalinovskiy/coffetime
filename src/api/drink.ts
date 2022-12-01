@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 
-export interface IDrinkListResponse {
+interface IDrinkListResponse {
     ProductList: IDrinktList[];
 }
 
@@ -31,10 +31,10 @@ interface IDrinktList {
     imagesPath: string;
 }
 
-export interface IDrinkRequest {
+interface IDrinkRequest {
     sessionId: string;
-    cafeId?: string |  undefined;
-    productId?: string |  undefined;
+    cafeId?: string;
+    productId?: string;
 }
 
 export const drinkApi = createApi({
@@ -77,8 +77,6 @@ export const drink = {
 
 export const {
     useGetCafeDrinkListQuery,
-    useLazyGetCafeDrinkListQuery,
     useGetDrinkItemQuery,
-    useLazyGetDrinkItemQuery,
     useGetFavoriteDrinkListQuery
 } = drinkApi;

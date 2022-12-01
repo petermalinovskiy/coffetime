@@ -5,8 +5,6 @@ import {Splash} from "~/modules/splash/Splash";
 import {ToastOverlay} from "~/common/components/ToastOverlay";
 import {DatePickerOverlay} from "~/common/components/DatePickerOverlay";
 import {Onboarding} from "~/modules/onboarding/Onboarding";
-import {Search} from "~/modules/search/Search";
-import {Settings} from "~/modules/settings/Settings";
 import {AppNavigationComponentProps, NavigationHOC, NavigationHOCProps} from "~/navigation/helpers/NavigationHOC";
 import {Menu} from "~/modules/menu/Menu";
 import {reduxProvider} from "~/core/store/store";
@@ -44,8 +42,6 @@ export function registerComponents() {
   registerAppScreenComponent({Component: Cafe, page: Pages.cafe, useRedux: true});
   registerAppScreenComponent({Component: Drink, page: Pages.drink, useRedux: true});
   registerAppScreenComponent({Component: Favorite, page: Pages.favorite, useRedux: true});
-  registerAppScreenComponent({Component: Search, page: Pages.search, titleKey: "pages.search", useRedux: true});
-  registerAppScreenComponent({Component: Settings, page: Pages.settings, titleKey: "pages.settings", useRedux: true});
   registerAppScreenComponent({Component: Menu, page: Pages.menu, titleKey: "pages.menu", useRedux: true});
   Navigation.registerComponent(Pages.toast.name, () => ToastOverlay);
 

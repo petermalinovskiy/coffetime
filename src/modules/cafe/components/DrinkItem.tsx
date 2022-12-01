@@ -9,16 +9,17 @@ import {Pages} from "~/navigation/pages";
 
 interface DrinkItemProps {
     children?: React.ReactNode;
-    drinkItemData: {
-        id: string;
-        cofeId: string;
-        name: string;
-        price: number;
-        favorite: boolean;
-        imagesPath: string;
-    };
+    drinkItemData: IDrinkItemData;
 }
 
+export interface IDrinkItemData {
+    id: string;
+    cofeId: string;
+    name: string;
+    price: number;
+    favorite: boolean;
+    imagesPath: string;
+}
 export const DrinkItem: React.FC<DrinkItemProps> = (props) => {
     const {drinkItemData} = props;
 
