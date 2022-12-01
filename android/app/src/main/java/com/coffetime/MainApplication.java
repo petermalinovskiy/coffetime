@@ -11,6 +11,7 @@ import com.facebook.react.modules.i18nmanager.I18nUtil;
 import com.coffetime.newarchitecture.MainApplicationReactNativeHost;
 import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.react.NavigationReactNativeHost;
+import com.BV.LinearGradient.LinearGradientPackage;
 
 import org.wonday.orientation.OrientationActivityLifecycle;
 
@@ -36,6 +37,7 @@ public class MainApplication extends NavigationApplication {
                 protected List<ReactPackage> getPackages() {
                     @SuppressWarnings("UnnecessaryLocalVariable")
                     List<ReactPackage> packages = new PackageList(this).getPackages();
+                    new LinearGradientPackage();
                     // Packages that cannot be autolinked yet can be added manually here, for example:
                     // packages.add(new MyReactNativePackage());
                     return packages;
