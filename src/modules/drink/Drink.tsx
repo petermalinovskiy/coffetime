@@ -7,8 +7,10 @@ import {CommonStyles} from "~/core/theme/commonStyles";
 import {Colors} from "~/core/theme/colors";
 import {Fonts} from "~/core/theme/fonts";
 import {LikeButton} from "~/common/components/LikeButton";
-import {TopSaleFlag} from "~/common/components/TopSaleFlag.";
-import {DrinkIcons} from "~/common/components/DrinkIcons";
+import {TopSaleFlag} from "~/modules/drink/components/TopSaleFlag.";
+import {DrinkIcons} from "~/modules/drink/components/DrinkIcons";
+
+
 
 interface IProps {
     id: string;

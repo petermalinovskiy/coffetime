@@ -27,7 +27,7 @@ export const loginApi = createApi({
                 body: user,
             }),
         }),
-        registration: builder.mutation<UserResponse, ILoginRequest | never>({
+        registration: builder.mutation<UserResponse, ILoginRequest>({
             query: (user) => ({
                 url: '/api/User/Register',
                 method: 'POST',

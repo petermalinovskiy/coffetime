@@ -19,9 +19,9 @@ export const TopBarBackButton: NavigationFunctionComponent<IProps> = (props) => 
   };
 
   return (
-    <Pressable style={styles.container} onPress={onArrowPress}>
-      <Image source={ImageResources.arrow_left} style={{tintColor: colors.text}}/>
-    </Pressable>
+      <Pressable style={styles.container} onPress={onArrowPress}>
+        <Image source={ImageResources.arrow_left} style={{tintColor: colors.text}}/>
+      </Pressable>
   );
 };
 

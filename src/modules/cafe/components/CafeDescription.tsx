@@ -8,12 +8,15 @@ import {Fonts} from "~/core/theme/fonts";
 import {AppNavigationComponent} from "~/navigation/helpers/NavigationHOC";
 
 interface IProps {
-    id: string
-    name: string;
-    address: string;
-    coordinates: string;
-    description: string;
-    images: string;
+    cafeData: {
+        id: string
+        name: string;
+        address: string;
+        coordinates: string;
+        description: string;
+        images: string;
+    }
+
 }
 
 export const CafeDescription: AppNavigationComponent<IProps> = ({cafeData}) => {

@@ -10,9 +10,9 @@ export function setDefaultOptions(colors?: ThemeColors) {
   const isLight = colors?.theme == "light";
 
   function getColor(
-    darkKey: keyof Omit<ThemeColors, "linealBg" | "personalAreaHeader" | 'MVPFade'>,
-    lightKey: keyof Omit<ThemeColors, "linealBg" | "personalAreaHeader" | "MVPFade">,
-    fallback: string,
+      darkKey: keyof Omit<ThemeColors, "linealBg" | "personalAreaHeader" | 'MVPFade'>,
+      lightKey: keyof Omit<ThemeColors, "linealBg" | "personalAreaHeader" | "MVPFade">,
+      fallback: string,
   ): string {
     return (isLight ? colors?.[lightKey] : colors?.[darkKey]) || fallback;
   }

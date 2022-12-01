@@ -6,7 +6,7 @@ import {Colors} from "~/core/theme/colors";
 
 export const TopSaleFlag: React.FC = () => {
     return (
-        <ImageBackground source={require('../../../resources/images/drinkSaleIcon.png')} resizeMode="cover" style={styles.drinkFlag}>
+        <ImageBackground source={require('../../../../resources/images/drinkSaleIcon.png')} resizeMode="cover" style={styles.drinkFlag}>
             <Text style={[CommonStyles.text, {color: Colors.white, marginRight: 16 }]}>Хит</Text>
         </ImageBackground>
     );

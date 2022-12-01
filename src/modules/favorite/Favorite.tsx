@@ -3,12 +3,12 @@ import {FlatListWrapper} from "~/common/components/FlatListWrapper";
 import {useAppSelector} from "~/core/store/store";
 import {NoList} from "~/common/components/NoList";
 import { useGetFavoriteDrinkListQuery} from "~/api/drink";
-import {DrinkItem} from "~/common/components/DrinkItem";
+import {DrinkItem} from "~/modules/cafe/components/DrinkItem";
+
 
 export const Favorite = (): JSX.Element => {
     const token = useAppSelector((store) => store.login.accessToken);
     const {data} = useGetFavoriteDrinkListQuery(token);
-    console.log(data)
 
     return (
         <FlatListWrapper

@@ -11,7 +11,7 @@ export const CommonSizes = {
     large: 22,
     largePlus: 28,
     extraLarge: 34,
-    extraLargePlus: 44,
+    extraLargePlus: 64,
   } as Readonly<ISize>,
   letterSpacing: {
     extraSmall: 0.07,
@@ -35,7 +35,7 @@ export const CommonSizes = {
     large: 28,
     largePlus: 34,
     extraLarge: 41,
-    extraLargePlus: 52,
+    extraLargePlus: 80,
   } as Readonly<ISize>,
   spacing: {
     extraSmall: 8,

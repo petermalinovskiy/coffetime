@@ -48,7 +48,7 @@ export const DrinkItem: React.FC<DrinkItemProps> = (props) => {
                 <View style={CommonStyles.rowSpaceBetween}>
                     <View style={CommonStyles.rowCenter}>
                         <Text style={styles.cafeDrinkPrice}>{drinkItemData.price}</Text>
-                        <Image source={require('../../../resources/images/ruble.png')}/>
+                        <Image source={require('../../../../resources/images/ruble.png')}/>
                     </View>
                     <LikeButton id={drinkItemData.id} favorite={drinkItemData.favorite} size={22}/>
                 </View>

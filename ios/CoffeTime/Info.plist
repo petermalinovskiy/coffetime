@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSApplicationCategoryType</key>
-	<string></string>
+	<string/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -79,6 +79,7 @@
 		<string>SF PRO DISPLAY LIGHT ITALIC.OTF</string>
 		<string>SF PRO DISPLAY MEDIUM.OTF</string>
 		<string>SF PRO DISPLAY SEMIBOLD ITALIC.OTF</string>
+		<string>Lobster.ttf</string>
 	</array>
 </dict>
 </plist>

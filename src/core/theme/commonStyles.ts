@@ -22,6 +22,10 @@ export const CommonStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   } as ViewStyle,
+  flexSpaceAround: {
+    flex: 1,
+    justifyContent: 'space-around',
+  } as ViewStyle,
   flexColumnCenterStretch: {
     flex: 1,
     flexDirection: "column",
@@ -36,6 +40,11 @@ export const CommonStyles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   } as ViewStyle,
+  rowSpaceBetween: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: 'space-between',
+  } as ViewStyle,
   row: {
     flexDirection: "row",
   } as ViewStyle,
@@ -44,16 +53,14 @@ export const CommonStyles = StyleSheet.create({
     alignItems: "flex-start",
   } as ViewStyle,
   shadow: {
-    ...Platform.select({
-      ios: {
-        shadowOffset: {height: 4, width: 0},
-        shadowOpacity: 0.25,
-        shadowRadius: 4,
-      } as ViewStyle,
-      android: {
-        elevation: 4,
-      } as ViewStyle,
-    }),
+    shadowColor: Colors.dark,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   } as ViewStyle,
   shadowTopBar: {
     ...Platform.select({
@@ -80,4 +87,49 @@ export const CommonStyles = StyleSheet.create({
   noTextTransform: {
     textTransform: "none",
   },
+  logo: {
+    fontFamily: Fonts.lobster,
+    fontSize: CommonSizes.font.extraLargePlus,
+    lineHeight: CommonSizes.lineHeight.extraLargePlus,
+    color: Colors.white,
+  } as TextStyle,
+  button: {
+    backgroundColor: Colors.blue,
+    width: 300,
+    height: 50,
+    borderRadius: 25,
+    marginTop: 30,
+    alignSelf: 'center',
+  },
+  greenButton: {
+    width: 300,
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: Colors.green,
+    marginTop: 30,
+    alignSelf: 'center',
+  },
+  textInput: {
+    height: 50,
+    padding: 10,
+    borderBottomWidth: 1,
+    color: Colors.white,
+    borderColor: Colors.white,
+    minWidth: "80%",
+    alignSelf: 'center',
+    textAlign: 'center',
+  },
+  title: {
+    fontSize: 20,
+    color: Colors.green,
+    marginBottom: 10
+  },
+  subtext: {
+    fontSize: 14,
+    color: Colors.gray
+  },
+  text: {
+    fontSize: 16,
+    color: Colors.gray
+  }
 });

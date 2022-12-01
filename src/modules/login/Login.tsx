@@ -29,22 +29,17 @@ export const Login: NavigationFunctionComponent = (): JSX.Element => {
 
     console.log(user);
 
-    const [login, {isFetching}] = useLazyLoginQuery();
+    const [login] = useLazyLoginQuery();
 
     const onSubmit = useCallback(async (data: {email: string; password: string}) => {
         const accessToken = await login(data).unwrap();
         console.log(accessToken);
-        do{
-            if (accessToken) {
-                console.log('pressed')
-                navigation.setRoot(getTabsRootLayout("light"));
-            }
-        } while (!isloading)
+
     },[login]);
 
     const onPress = async () => {
         await onSubmit(user);
-        console.log(accessToken)
+        console.log("Tokken----", accessToken)
         if (accessToken) {
             console.log('pressed')
             navigation.setRoot(getTabsRootLayout("light"));

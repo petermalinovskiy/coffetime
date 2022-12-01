@@ -6,8 +6,11 @@ import {CommonStyles} from "~/core/theme/commonStyles";
 import {PrimaryButton} from "~/common/components/PrimaryButton";
 import {ButtonType} from "~/types";
 import {Colors} from "~/core/theme/colors";
+import {useHideSplash} from "~/modules/splash/useHideSplash";
 
 export const Authorization: NavigationFunctionComponent = (props): JSX.Element => {
+    useHideSplash();
+
     return (
         <View style={CommonStyles.flex1}>
             <ImageBackground source={require('../../../resources/images/bg_image.png')} resizeMode='cover' style={CommonStyles.flex1}>

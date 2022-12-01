@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import MapView, {Marker} from "react-native-maps";
-import {CafeItemProps, IcafeData} from "~/common/components/CafeItem";
+import {CafeItemProps, IcafeData} from "~/modules/main/components/CafeItem";
 
 export const Map: React.FC<CafeItemProps> = (props) => {
 

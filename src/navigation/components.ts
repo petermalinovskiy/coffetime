@@ -23,4 +23,8 @@ export const Components = {
     id: "MODALIZE_CONTAINER",
     name: "ModalizeContainer",
   },
+  topBarFavoriteButton: {
+    id: "TOP_BAR_FAVORITE_BUTTON",
+    name: "TopBarFavoriteButton",
+  },
 };

@@ -105,7 +105,7 @@ export enum Colors {
   // for android
   primaryDark = "#930005",
   // brand colors
-  gray = "#A5ACB8",
+  gray = "#717171",
   primary = "#cc122d",
   white = "#FFFFFF",
   black = "#000000",
@@ -116,7 +116,7 @@ export enum Colors {
   secondary = "#939BAC",
   tertialy = "#C4C4CC",
   winline2Disabled = "#5C6168",
-  dark = "#1F2E4B",
+  dark = "#373737",
   lightThemeBG = "#F4F5F8",
   darkThemeBG = "#0D1116",
   errorBG = "#ECC5C3",
@@ -134,8 +134,8 @@ export enum Colors {
   validationBackground = "#FAEBEB",
 
   //debug
-  blue = "#369",
-  green = "#396",
+  blue = "#3B5998",
+  green = "#C8D9AF",
 }
 
 export enum PlatformColorsIOS {

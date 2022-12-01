@@ -38,5 +38,29 @@ export const Pages = {
   menu: {
     id: "MENU_SCREEN",
     name: "MenuScreen"
-  }
+  },
+  authorization: {
+    id: "AUTHORIZATION_SCREEN",
+    name: "AuthorizationScreen"
+  },
+  login: {
+    id: "LOGIN_SCREEN",
+    name: "LoginScreen"
+  },
+  registration: {
+    id: "REGISTRATION_SCREEN",
+    name: "RegistrationScreen"
+  },
+  cafe: {
+    id: "CAFE_SCREEN",
+    name: "CafeScreen"
+  },
+  drink: {
+    id: "DRINK_SCREEN",
+    name: "DrinkScreen"
+  },
+  favorite: {
+    id: "FAVORITE_SCREEN",
+    name: "FavoriteScreen"
+  },
 };

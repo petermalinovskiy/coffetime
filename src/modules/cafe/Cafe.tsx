@@ -1,12 +1,13 @@
 import React from "react";
 import {FlatListWrapper} from "~/common/components/FlatListWrapper";
-import {IcafeData} from "~/common/components/CafeItem";
-import {CafeDescription} from "~/common/components/CafeDescription";
+import {IcafeData} from "~/modules/main/components/CafeItem";
+import {CafeDescription} from "~/modules/cafe/components/CafeDescription";
 import {useAppSelector} from "~/core/store/store";
 import {NoList} from "~/common/components/NoList";
 import {AppNavigationComponent} from "~/navigation/helpers/NavigationHOC";
 import {useGetCafeDrinkListQuery} from "~/api/drink";
-import {DrinkItem} from "~/common/components/DrinkItem";
+import {DrinkItem} from "~/modules/cafe/components/DrinkItem";
+
 
 interface IProps {
     cafeData: IcafeData;
@@ -33,6 +34,7 @@ export const Cafe: AppNavigationComponent<IProps>= (props): JSX.Element => {
             ListHeaderComponent={<CafeDescription cafeData={cafeData}/>}
             contentContainerStyle={{justifyContent: 'space-around'}}
             numColumns={2}
+            isLoading={false}
         />
     );
 };
